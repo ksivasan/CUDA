@@ -1,0 +1,9 @@
+Indexing and stride:
+
+  int index = blockIdx.x * blockDim.x + threadIdx.x;
+  int stride = blockDim.x * gridDim.x;
+  
+No. of blocks calculation
+
+  int blockSize = 256;
+  int numBlocks = (N + blockSize - 1) / blockSize;
