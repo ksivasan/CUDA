@@ -7,5 +7,10 @@ No. of blocks calculation
 
   int blockSize = 256;
   int numBlocks = (N + blockSize - 1) / blockSize;
-  
+ 
+max no. of threads possible: 1024
+
+using unit8 and dim3
+  we can't use values greater than 64 for z
+  x, y, z cannot take value 0 or x*y*z greater than 1024
 
